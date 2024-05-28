@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.container{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    width: 920px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sect1, .sect2, .sect3{
+    width: 25%;
+    height: 84%;
+    padding: 40px;
+}
+
+.sect1{
+    background-color:#e28525 ;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.sect2{
+    background-color: #016972;
+}
+.sect3{
+    background-color: #00403f;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.logo1, .logo2, .logo3{
+    background-position: center;
+    background-size: cover;
+    height: 40px;
+    width: 64px;
+}
+
+.logo1{
+    background: url(./images/icon-sedans.svg);
+}
+.logo2{
+    background: url(./images/icon-suvs.svg);
+}
+.logo3{
+    background: url(./images/icon-luxury.svg);
+}
+
+h2{
+    margin-top: 40px;
+}
+
+p{
+    margin-top: 40px;
+    width: 187px;
+    margin-bottom: 120px;
+    line-height: 20px;
+    color: #a1cacc;
+}
+
+.a1{
+    color:#e28525 ;
+}
+.a2{
+    color: #016972;
+}
+.a3{
+    color: #00403f;
+}
+
+a{
+    text-decoration: none;
+}
+.a{
+    margin-top: 0px;
+    text-decoration: none;
+    width: 146px;
+    height: 48px;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a:hover{
+    background-color: none;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+@media (max-width:950px) {
+    .container{
+        height: 100%;
+        width: 100%;
+    }
+    .content{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 300px;
+        height: auto;
+        flex-direction: column;
+        
+    }
+    .sect1,.sect2,.sect3{
+        padding: 0;
+        width: 250px;
+        height: 330px;
+        padding: 24px;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    .a{
+        width: 120px;
+        height: 40px;
+    }
+    .sect1{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .sect3{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+    
+}
